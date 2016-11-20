@@ -25,7 +25,7 @@ test('visiting /store', function(assert) {
 
   andThen(function() {
     assert.equal(currentURL(), '/store', 'The URL is "/store"');
-    assert.equal(elementExists('#nav-link-store'), true, 'Brick template has a heading with ID "brick-heading".');
+    assert.equal(elementExists('#nav-link-store'), true, 'Store link in site navigation should have ID "nav-link-store".');
     assert.ok(canSeeLink('Cakes'), 'Can see the "Cakes" link.');
     assert.ok(canSeeLink('Cupcakes'), 'Can see the "Cupcakes" link.');
     assert.ok(canSeeLink('Cookies'), 'Can see the "Cookies" link.');
